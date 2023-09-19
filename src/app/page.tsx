@@ -1,8 +1,7 @@
 'use client';
-import Btn from '@/components/UI/Btn';
-
 import styles from './page.module.css';
-import Link from 'next/link';
+import Btn from '@/components/UI/Btn';
+import Tab from '@/components/UI/Tab';
 
 export default function Page() {
   const handleClick = () => {
@@ -42,6 +41,8 @@ export default function Page() {
       <Btn href="#" target="_blank" className={styles.btn}>
         안녕하세요
       </Btn>
+
+      <Tab />
     </>
   );
 }
