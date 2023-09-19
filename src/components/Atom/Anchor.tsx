@@ -13,7 +13,6 @@ export default function Anchor({
   target,
   className,
 }: AnchorProps) {
-  console.log(href);
   return (
     <Link href={href} target={target} className={className}>
       {children}
