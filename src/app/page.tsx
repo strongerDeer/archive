@@ -2,6 +2,17 @@
 import styles from './page.module.css';
 import Btn from '@/components/UI/Btn';
 import Tab from '@/components/UI/Tab';
+import RadioList from '@/components/UI/RadioList';
+
+const radioTech = {
+  name: 'tech',
+  items: [
+    { value: 'html', label: 'HTML' },
+    { value: 'css', label: 'CSS' },
+    { value: 'js', label: 'JavaScript' },
+  ],
+  require: true,
+};
 
 export default function Page() {
   const handleClick = () => {
@@ -43,6 +54,7 @@ export default function Page() {
       </Btn>
 
       <Tab />
+      <RadioList list={radioTech} />
     </>
   );
 }
