@@ -4,6 +4,7 @@ import Btn from '@/components/UI/Btn';
 import Tab from '@/components/UI/Tab';
 import RadioList from '@/components/UI/RadioList';
 import Login from '@/components/UI/Login';
+import MultiForm from '@/components/UI/MultiForm';
 
 const radioTech = {
   name: 'tech',
@@ -58,6 +59,8 @@ export default function Page() {
       <RadioList list={radioTech} />
 
       <Login />
+
+      <MultiForm />
     </>
   );
 }
