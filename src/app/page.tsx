@@ -5,6 +5,7 @@ import Tab from '@/components/UI/Tab';
 import RadioList from '@/components/UI/RadioList';
 import Login from '@/components/UI/Login';
 import MultiForm from '@/components/UI/MultiForm';
+import CheckList from '@/components/UI/CheckList';
 
 const radioTech = {
   name: 'tech',
@@ -61,6 +62,7 @@ export default function Page() {
       <Login />
 
       <MultiForm />
+      <CheckList />
     </>
   );
 }
