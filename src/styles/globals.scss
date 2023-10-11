@@ -1,0 +1,88 @@
+/* reset ------------------------------------------------------- */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+}
+button,
+input {
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+}
+button {
+  background: none;
+  padding: 0;
+  border: 0;
+  vertical-align: middle;
+}
+button:enabled {
+  cursor: pointer;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+img,
+svg {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font: inherit;
+}
+
+/* 공통 ------------------------------------------------------- */
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+/* 폰트 ------------------------------------------------------- */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff')
+    format('woff');
+  font-weight: 500;
+  font-style: bold;
+}
+
+/* 폰트*/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Pretendard', sans-serif;
+}

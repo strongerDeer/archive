@@ -6,6 +6,7 @@ import RadioList from '@/components/UI/RadioList';
 import Login from '@/components/UI/Login';
 import MultiForm from '@/components/UI/MultiForm';
 import CheckList from '@/components/UI/CheckList';
+import Banner from '@/components/UI/banner/Banner';
 
 const radioTech = {
   name: 'tech',
@@ -23,11 +24,15 @@ export default function Page() {
   };
   return (
     <>
+      <Banner />
+
       <h1>제목</h1>
       <h2>버튼</h2>
+
       <Btn></Btn>
       <Btn>Button</Btn>
       <Btn type="submit">submit</Btn>
+
       <Btn type="reset">reset</Btn>
       <Btn onClick={handleClick} className={styles.btn}>
         커스텀
@@ -57,12 +62,14 @@ export default function Page() {
       </Btn>
 
       <Tab />
+
       <RadioList list={radioTech} />
 
       <Login />
 
       <MultiForm />
-      <CheckList />
+
+      {/* <CheckList /> */}
     </>
   );
 }

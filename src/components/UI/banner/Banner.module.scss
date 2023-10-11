@@ -1,0 +1,53 @@
+$bannerHeight: 40rem;
+$bannerBgColor: #eee;
+
+$pagerColor: #aaa;
+$pagerActiveColor: royalblue;
+$pagerSize: 1rem;
+$pagerRadius: 1rem;
+.bannerWrap {
+  position: relative;
+  height: $bannerHeight;
+  background-color: $bannerBgColor;
+  width: 100%;
+  overflow: hidden;
+}
+.bannerList {
+  display: flex;
+  height: 100%;
+  transition: all 0.3s;
+
+  li {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+  }
+}
+
+.bannerPager {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+
+  button {
+    width: $pagerSize;
+    height: $pagerSize;
+    border-radius: $pagerRadius;
+    background-color: $pagerColor;
+    opacity: 0.5;
+    transition: all 0.2s;
+    &.active {
+      opacity: 1;
+      width: 1.5em;
+      background-color: $pagerActiveColor;
+    }
+    &:not(.active):hover {
+      opacity: 1;
+    }
+  }
+}
